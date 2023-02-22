@@ -38,7 +38,7 @@ a{
 /*WRAPPED SECTION*/
 .main{
     background-color: rgb(66, 66, 66);
-    width: calc(100% - 250px);
+    width: 100%;
     height: calc(100% - 100px);
 }
 /*MAIN CHILDS*/
@@ -51,7 +51,7 @@ a{
     left: 0;
 }
 .main-content{
-    width: 100%;
+    width: calc(100% - 250px);
     height: 100%;
     position: absolute;
     top: 0;
