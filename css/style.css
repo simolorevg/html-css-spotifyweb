@@ -46,22 +46,13 @@ a{
     width: 250px;
     height: 100%;
     background-color: black;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 .main-content{
     flex-grow: 1;
-    position: absolute;
-    top: 0;
-    left: 250px;
 }
 .upgrade-section{
     width: 100%;
     height: 100px;
-    position: fixed;
-    left: 250px;
-    top: 0;
     background-color: rgba(0, 0, 0, 0.5);
 }
 .song-section{
@@ -79,27 +70,20 @@ a{
     background-color: #282828;
     width: 100%;
     height: 100px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 999;
 }
 /*MEDIA QUERIES*/
 /*MD MEDIA QUERY*/
 @media screen and (max-width: 1100px) {
 }
 /*S MEDIA QUERY*/
-@media screen and (max-width: 700px) {   
+@media screen and (max-width: 700px) { 
+    .col-left{
+        width: 150px;
+    }  
 }
 /*XS MEDIA QUERY*/
 @media screen and (max-width: 600px) {
     .col-left{
         width: 100px;
-    }
-    .main-content{
-        left: 100px;
-    }
-    .upgrade-section{
-        left: 100px;
     }
 }
