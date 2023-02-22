@@ -72,9 +72,12 @@ a{
 }
 .discover-list{
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .discover-list li{
     list-style-type: none;
+    display: inline-block;
 }
 .row{
    width: 100%;
@@ -102,6 +105,10 @@ a{
     .col{
         width: calc(100% / 4 - 10px);
         margin-bottom: 20px;
+    }
+    /*MAIN CONTENT*/
+    .discover-list li:last-child{
+        justify-self: center;
     }
 }
 /*S MEDIA QUERY*/
