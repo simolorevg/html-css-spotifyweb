@@ -5,6 +5,16 @@
     box-sizing: border-box;
 }
 /*COMMON*/
+img{
+    max-width: 100%;
+}
+body{
+    color: white;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
 /*MARGIN*/
 .margin-top100{
     margin-top: 100px;
@@ -13,6 +23,10 @@
 .flexcol{
     display: flex;
     flex-direction: column;
+}
+.flex{
+    display: flex;
+    justify-content: center;
 }
 /*LAYOUT*/
 /*WRAPPED*/
@@ -23,15 +37,15 @@
 }
 /*WRAPPED SECTION*/
 .main{
-    background-color: yellow;
-    width: 100%;
+    background-color: rgb(66, 66, 66);
+    width: calc(100% - 250px);
     height: calc(100% - 100px);
 }
 /*MAIN CHILDS*/
 .col-left{
     width: 250px;
     height: 100%;
-    background-color: orange;
+    background-color: black;
     position: fixed;
     top: 0;
     left: 0;
@@ -54,14 +68,17 @@
 }
 .song-section{
     width: 100%;
-    background-color: blue;
 }
 .song-lists{
     width: 100%;
+    padding: 20px;
+}
+.discover-list li{
+    list-style-type: none;
 }
 /*WRAPPED FOOTER*/
 .footer{
-    background-color: black;
+    background-color: #282828;
     width: 100%;
     height: 100px;
     position: absolute;
