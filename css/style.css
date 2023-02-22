@@ -19,6 +19,9 @@ a{
 .margin-right10{
     margin-right: 10px;
 }
+.margin-top10{
+    margin-top: 10px;
+}
 /*FLEXBOX*/
 .flexcol{
     display: flex;
@@ -28,9 +31,9 @@ a{
     display: flex;
     justify-content: center;
 }
-.flexspacebw{
+.flexjustifystart{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 /*LAYOUT*/
 /*WRAPPED*/
@@ -65,7 +68,10 @@ a{
 }
 .song-lists{
     width: 100%;
-    padding: 20px;
+    padding: 10px;
+}
+.discover-list{
+    width: 100%;
 }
 .discover-list li{
     list-style-type: none;
@@ -74,13 +80,10 @@ a{
    width: 100%;
 }
 .col{
-    width: calc(100% / 6 - 10px);
-    margin: 0 10px;
-    /*DEBUG*/
-    background-color: white;
-    height: 100px
+    width: calc(100% / 6);
+    margin: 0 5px;
+    padding: 0 10px;
 }
-
 /*WRAPPED FOOTER*/
 .footer{
     background-color: #282828;
@@ -90,16 +93,36 @@ a{
 /*MEDIA QUERIES*/
 /*MD MEDIA QUERY*/
 @media screen and (max-width: 1100px) {
+    /*MAIN CHILDS*/
+    .row{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .col{
+        width: calc(100% / 4 - 10px);
+        margin-bottom: 20px;
+    }
 }
 /*S MEDIA QUERY*/
 @media screen and (max-width: 700px) { 
+    /*MAIN CHILDS*/
     .col-left{
         width: 150px;
-    }  
+    }
+    /*SONGS LIST*/
+    .col{
+        width: calc(100% / 2 - 15px);
+    }
+    .song-section{
+        height: calc(100% - 100px);
+    }
 }
 /*XS MEDIA QUERY*/
 @media screen and (max-width: 600px) {
+    /*MAIN CHILDS*/
     .col-left{
-        width: 100px;
+        width: 150px;
     }
+
 }
