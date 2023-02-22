@@ -55,6 +55,14 @@ a{
     justify-content: flex-start;
 }
 /*LAYOUT*/
+/*BTN*/
+.btn{
+    padding: 10px 20px;
+}
+.primary-btn{
+    border: 1px solid white;
+    border-radius: 20px;
+}
 /*WRAPPED*/
 .wrapped{
     width: 100%;
@@ -105,6 +113,9 @@ a{
 .upgrade-section{
     width: 100%;
     height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
 }
 .song-section{
