@@ -10,6 +10,7 @@ img{
 }
 body{
     color: white;
+    font-family: 'PT Sans', sans-serif;
 }
 a{
     color: inherit;
@@ -22,6 +23,9 @@ a{
 .margin-top10{
     margin-top: 10px;
 }
+.margin-top30{
+    margin-top: 30px;
+}
 /*FLEXBOX*/
 .flexcol{
     display: flex;
@@ -30,6 +34,11 @@ a{
 .flex{
     display: flex;
     justify-content: center;
+}
+.flexcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .flexaligncenter{
     display: flex;
@@ -56,7 +65,6 @@ a{
 /*COL LEFT*/
 .col-left{
     width: 200px;
-    height: 100%;
     padding: 20px;
     background-color: black;
 }
@@ -67,6 +75,21 @@ a{
 .col-left li img{
     width: 30px;
     margin-right: 10px;
+}
+/*PLAYLIST CARD*/
+.card{
+    width: 100%;
+}
+.card p{
+    font-size: 1.2em;
+}
+.cross{
+    width: 30%;
+    height: 100%;
+    text-align: center;
+}
+.cross i{
+    font-size: 2.9em;
 }
 /*MAIN CONTENT*/
 .main-content{
