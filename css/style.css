@@ -44,7 +44,6 @@ a{
 /*MAIN CHILDS*/
 .col-left{
     width: 250px;
-    height: 100%;
     background-color: black;
     position: fixed;
     top: 0;
