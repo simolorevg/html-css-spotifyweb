@@ -31,6 +31,10 @@ a{
     display: flex;
     justify-content: center;
 }
+.flexaligncenter{
+    display: flex;
+    align-items: center;
+}
 .flexjustifystart{
     display: flex;
     justify-content: flex-start;
@@ -60,6 +64,11 @@ a{
     list-style-type: none;
     margin: 20px 0;
 }
+.col-left li img{
+    width: 30px;
+    margin-right: 10px;
+}
+/*MAIN CONTENT*/
 .main-content{
     flex-grow: 1;
     overflow-y: scroll;
