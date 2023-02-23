@@ -221,10 +221,14 @@ a{
     background-color: green; 
 }
 .dot{
-    display: none;
+    filter: opacity(0);
+    transition: filter;
     position: absolute;
     top: -3px;
     left: 38px;
+}
+.volume-bar:hover .dot{
+    filter: opacity(1);
 }
 /*PLAYER BUTTONS*/
 .player-buttons{
