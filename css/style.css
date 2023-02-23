@@ -12,6 +12,9 @@ body{
     color: orange;
     font-family: 'PT Sans', sans-serif;
 }
+hr{
+    color: #FFA500;
+}
 a{
     color: inherit;
     text-decoration: none;
@@ -77,11 +80,10 @@ a{
 }
 /*LAYOUT*/
 /*IMG HOVER*/
-.col
-:hover img{
+.img-playlist:hover img{
     filter: brightness(20%);
 }
-.col:hover i{
+.img-playlist:hover i{
     filter: opacity(1);
 }
 /*DISPLAY*/
@@ -97,7 +99,7 @@ a{
     padding: 10px 20px;
 }
 .primary-btn{
-    border: 1px solid white;
+    border: 2px solid orange;
     border-radius: 20px;
 }
 /*WRAPPED*/
@@ -108,7 +110,7 @@ a{
 }
 /*WRAPPED SECTION*/
 .main{
-    background-color: rgb(66, 66, 66);
+    background-color: rgb(19, 18, 18);
     width: 100%;
     height: calc(100% - 100px);
 }
@@ -150,6 +152,7 @@ a{
 .upgrade-section{
     width: 100%;
     height: 100px;
+    padding: 10px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -179,7 +182,6 @@ a{
    width: 100%;
 }
 .col{
-    position: relative;
     width: calc(100% / 6 - 20px);
     margin: 0 10px;
     height: 300px;
@@ -187,13 +189,16 @@ a{
 }
 .col i{
     position: absolute;
-    top: 20%;
-    left: 35%;
+    top: 33%;
+    left: 36%;
     font-size: 3em;
     filter: opacity(0);
 }
 .col p{
     margin-top: 0.5em;
+}
+.img-playlist{
+    position: relative;
 }
 /*WRAPPED FOOTER*/
 .footer{
