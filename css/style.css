@@ -39,7 +39,6 @@ a{
 }
 .flex{
     display: flex;
-    justify-content: center;
 }
 .flexcenter{
     display: flex;
@@ -52,6 +51,7 @@ a{
 }
 .flexjustifystart{
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
 }
 /*LAYOUT*/
@@ -81,7 +81,7 @@ a{
     width: 200px;
     padding: 20px;
     background-color: black;
-    overflow-y: auto;
+    /* overflow-y: auto; */
 }
 .col-left li{
     list-style-type: none;
@@ -90,6 +90,15 @@ a{
 .col-left li img{
     width: 30px;
     margin-right: 10px;
+}
+.col-left img[alt="small logo"]{
+    display: none;
+}
+.calltoaction img{
+    width: 20px;
+}
+.username img{
+    width: 20px;
 }
 /*PLAYLIST CARD*/
 .card{
@@ -108,7 +117,7 @@ a{
 }
 /*MAIN CONTENT*/
 .main-content{
-    flex-grow: 1;
+    width: calc(100% - 200px);
     overflow-y: auto;
 }
 .upgrade-section{
@@ -178,6 +187,9 @@ a{
     .col-left{
         width: 150px;
     }
+    .main-content{
+        width: calc(100% - 150px);
+    }
     /*SONGS LIST*/
     .col{
         width: calc(100% / 2 - 15px);
@@ -190,7 +202,23 @@ a{
 @media screen and (max-width: 600px) {
     /*MAIN CHILDS*/
     .col-left{
-        width: 150px;
+        width: 100px;
+    }
+    .col-left img[alt="small logo"]{
+        display: block;
+        width: 30px;
+    }
+    .col-left img[alt="Spotify Logo"]{
+        display: none;
+    }
+    .playlist{
+        display: none;
+    }
+    .col-left a p{
+        display: none;
+    }
+    .main-content{
+        width: calc(100% - 100px);
     }
 
 }
