@@ -62,6 +62,11 @@ a{
     justify-content: space-between;
     align-items: center;
 }
+.spacearoundcenter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 /*LAYOUT*/
 /*DISPLAY*/
 .display-block{
@@ -192,6 +197,38 @@ a{
 }
 .song-card img{
     width: 50px;
+}
+.player{
+    width: 40%;
+    height: 100%;
+}
+/*VOLUME*/
+.volume-bar{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100px;
+    height: 10px;
+    border-radius: 20px;
+    background-color: grey;
+}
+.volume-value{
+    width: 50%;
+    height: 100%;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: green; 
+}
+.dot{
+    display: none;
+    position: absolute;
+    top: -3px;
+    left: 38px;
+}
+/*PLAYER BUTTONS*/
+.player-buttons{
+    font-size: 1.5em;
 }
 /*MEDIA QUERIES*/
 /*MD MEDIA QUERY*/
