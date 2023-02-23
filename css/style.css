@@ -326,6 +326,10 @@ a{
     .col-left a p{
         display: none;
     }
+    .calltoaction,
+    .username{
+        display: none;
+    }
     .main-content{
         width: calc(100% - 100px);
     }
