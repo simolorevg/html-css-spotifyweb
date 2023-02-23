@@ -81,6 +81,7 @@ a{
     width: 200px;
     padding: 20px;
     background-color: black;
+    overflow-y: auto;
 }
 .col-left li{
     list-style-type: none;
@@ -95,7 +96,7 @@ a{
     width: 100%;
 }
 .card p{
-    font-size: 1.2em;
+    font-size: 1em;
 }
 .cross{
     width: 30%;
@@ -103,12 +104,12 @@ a{
     text-align: center;
 }
 .cross i{
-    font-size: 2.9em;
+    font-size: 1em;
 }
 /*MAIN CONTENT*/
 .main-content{
     flex-grow: 1;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 .upgrade-section{
     width: 100%;
