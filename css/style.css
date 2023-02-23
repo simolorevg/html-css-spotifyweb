@@ -119,6 +119,8 @@ a{
 .col-left{
     width: 200px;
     background-color: black;
+    font-size: 1em;
+    padding: 10px;
 }
 .col-left img{
     width: 150px;
@@ -210,7 +212,6 @@ a{
     width: 300px;
     height: 100%;
     padding: 20px;
-    border: 1px solid red;
 }
 .song-card{
     width: 30%;
@@ -313,6 +314,16 @@ a{
     .song-section{
         height: calc(100% - 100px);
     }
+    /*PLAYER*/
+    .player-buttons a{
+        font-size: 1em;
+    }
+    .player-buttons a:nth-child(2n+2){
+        margin: 0;
+    }
+    .player-buttons a:nth-child(3){
+        font-size: inherit;
+    }
 }
 /*XS MEDIA QUERY*/
 @media screen and (max-width: 600px) {
@@ -330,7 +341,13 @@ a{
     .playlist{
         display: none;
     }
+    .col-left{
+        padding: 10px;
+    }
     .col-left a p{
+        display: none;
+    }
+    .col-left hr{
         display: none;
     }
     .calltoaction,
@@ -340,5 +357,15 @@ a{
     .main-content{
         width: calc(100% - 100px);
     }
-
+    /*FOOTER*/
+    /*PLAYER*/
+    .player-buttons a{
+        font-size: 1em;
+    }
+    .player-buttons a:nth-child(2n+2){
+        margin: 0;
+    }
+    .player-buttons a:nth-child(3){
+        font-size: inherit;
+    }
 }
