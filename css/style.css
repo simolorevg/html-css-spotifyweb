@@ -76,6 +76,13 @@ a{
     align-items: center;
 }
 /*LAYOUT*/
+/*IMG HOVER*/
+.col:hover img{
+    filter: brightness(20%);
+}
+.col:hover i{
+    filter: opacity(1);
+}
 /*DISPLAY*/
 .display-block{
     display: block;
@@ -135,9 +142,6 @@ a{
     width: 100%;
     font-size: 1.2em;
 }
-/* .card p{
-    font-size: 1.2em;
-} */
 /*MAIN CONTENT*/
 .main-content{
     width: calc(100% - 200px);
@@ -174,10 +178,18 @@ a{
    width: 100%;
 }
 .col{
+    position: relative;
     width: calc(100% / 6 - 20px);
     margin: 0 10px;
     height: 300px;
     text-align: center;
+}
+.col i{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    font-size: 3em;
+    filter: opacity(0);
 }
 .col p{
     margin-top: 0.5em;
