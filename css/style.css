@@ -23,6 +23,9 @@ a{
 .margin-right20{
     margin-right: 20px;
 }
+.margin-left-right10{
+    margin: 0 10px;
+}
 .margin-top10{
     margin-top: 10px;
 }
@@ -39,6 +42,11 @@ a{
 .flexcol{
     display: flex;
     flex-direction: column;
+}
+.flexcolcenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .flex{
     display: flex;
@@ -125,22 +133,14 @@ a{
 /*PLAYLIST CARD*/
 .card{
     width: 100%;
+    font-size: 1.2em;
 }
-.card p{
-    font-size: 1em;
-}
-.cross{
-    width: 30%;
-    height: 100%;
-    text-align: center;
-}
-.cross i{
-    font-size: 1em;
-}
+/* .card p{
+    font-size: 1.2em;
+} */
 /*MAIN CONTENT*/
 .main-content{
     width: calc(100% - 200px);
-    overflow-y: auto;
 }
 .upgrade-section{
     width: 100%;
@@ -148,10 +148,11 @@ a{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 .song-section{
     width: 100%;
+    overflow-y: auto;
 }
 .song-lists{
     width: 100%;
@@ -166,6 +167,9 @@ a{
     list-style-type: none;
     display: inline-block;
 }
+.discover-list a:hover{
+    border-bottom: 2px solid lime;
+}
 .row{
    width: 100%;
 }
@@ -173,7 +177,6 @@ a{
     width: calc(100% / 6 - 20px);
     margin: 0 10px;
     height: 300px;
-    border: 1px solid yellow;
     text-align: center;
 }
 .col p{
@@ -189,7 +192,6 @@ a{
     width: 20%;
     height: 100%;
     padding: 20px;
-    border: 1px solid red;
 }
 .song-card{
     width: 30%;
@@ -220,19 +222,43 @@ a{
     border-radius: 20px;
     background-color: green; 
 }
+.large{
+    width: 80%;
+}
 .dot{
     filter: opacity(0);
     transition: filter;
     position: absolute;
     top: -3px;
-    left: 38px;
+    left: 30%;
+}
+.dot-large{
+   filter: opacity(0);
+    transition: filter;
+    position: absolute;
+    top: -3px;
+    left: 47%; 
 }
 .volume-bar:hover .dot{
     filter: opacity(1);
 }
+.volume-bar:hover .dot-large{
+    filter: opacity(1);
+}
 /*PLAYER BUTTONS*/
 .player-buttons{
-    font-size: 1.5em;
+    width:100%;
+    font-size: 1.2em;
+    text-align: center;
+}
+.player-buttons a{
+    vertical-align: middle;
+}
+.player-buttons a:nth-child(2n+2){
+    margin: 0 10px;
+}
+.player-buttons a:nth-child(3){
+    font-size: 1.8em;
 }
 /*MEDIA QUERIES*/
 /*MD MEDIA QUERY*/

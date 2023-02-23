@@ -17,36 +17,36 @@
 </head>
 <body>
     <div class="wrapped">
-            <div class="main flex">
-                <div class="col-left">
-                    <a href="#home" class="display-block margin-top10">
-                        <img src="img/logo.svg" alt="Spotify Logo">
-                        <img src="img/logo-small.svg" alt="small logo">
-                    </a>
-                    <!--navbar section-->
-                    <ul class="margin-top10">
-                        <li>
-                            <a href="#home" class="flexaligncenter">
-                                <img src="img/home.svg" alt="Home"> <p>Home</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#find" class="flexaligncenter">
-                                <img src="img/search.svg" alt="Search"> <p>Cerca</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#library" class="flexaligncenter">
-                                <img src="img/libreria.svg" alt="Libreria"> <p>La tua libreria</p>
-                            </a>
-                        </li>
-                    </ul>
-                    <!--navbar section-->
-                    <!--playlist section-->
-                    <div class="playlist margin-top10 margin-bottom20">
+        <div class="main flex">
+            <div class="col-left">
+                <a href="#home" class="display-block margin-top10">
+                    <img src="img/logo.svg" alt="Spotify Logo">
+                    <img src="img/logo-small.svg" alt="small logo">
+                </a>
+                <!--navbar section-->
+                <ul class="margin-top10">
+                    <li>
+                        <a href="#home" class="flexaligncenter">
+                            <img src="img/home.svg" alt="Home"> <p>Home</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#find" class="flexaligncenter">
+                            <img src="img/search.svg" alt="Search"> <p>Cerca</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#library" class="flexaligncenter">
+                            <img src="img/libreria.svg" alt="Libreria"> <p>La tua libreria</p>
+                        </a>
+                    </li>
+                </ul>
+                <!--navbar section-->
+                <!--playlist section-->
+                <div class="playlist margin-top10 margin-bottom20">
                        <h3>PLAYLIST</h3>
                        <a href="#link" class="card flexaligncenter margin-top10">
-                        <div class="cross flexaligncenter margin-right10"><i class="fa-solid fa-square-plus"></i></div> <p>Crea Playlist</p>
+                        <i class="fa-solid fa-square-plus margin-right10"></i><p>Crea Playlist</p>
                        </a>
                        <ul>
                         <li><a href="">Dj Simone Mix</a></li>
@@ -54,22 +54,22 @@
                         <li><a href="">Saturday Party</a></li>
                         <li><a href="">Lorem Playlist</a></li>
                        </ul>
-                    </div>
-                    <!--end playlist section-->
-                    <!--Call to action and Username-->
-                    <div class="calltoaction margin-bottom10 flexaligncenter">
+                </div>
+                <!--end playlist section-->
+                <!--Call to action and Username-->
+                <div class="calltoaction margin-bottom10 flexaligncenter">
                         <a href="#download">
                             <img src="img/download.svg" alt="Download" class="margin-right10">
                             Scarica l'app
                         </a>
-                    </div>
-                    <hr>
-                    <div class="username margin-top10 flexaligncenter">
-                        <img src="img/profile.svg" alt="User Photo" class="margin-right10"><h4>Simone Viaggi</h4>
-                    </div>
-                    <!--/Call to action and Username-->
                 </div>
-            <div class="main-content flexcol">
+                <hr>
+                <div class="username margin-top10 flexaligncenter">
+                        <img src="img/profile.svg" alt="User Photo" class="margin-right10"><h4>Simone Viaggi</h4>
+                </div>
+                <!--/Call to action and Username-->
+            </div>
+        <div class="main-content flexcol">
                 <!--upgrade and songs section-->
                 <div class="upgrade-section">
                     <a href="" class="btn primary-btn">
@@ -193,10 +193,11 @@
                     </div>
                     <!--/song lists-->
                 </div>
-            </div>
-            <!--/upgrade and songs section-->
-            </div>
-        <div class="footer spacebetweencenter">
+        </div>
+        <!--/upgrade and songs section-->
+        </div>
+    <!--footer-->
+    <div class="footer spacebetweencenter">
             <!--Song playing-->
             <div class="song-playing">
                 <div class="song-card flexaligncenter">
@@ -211,13 +212,32 @@
             </div>
             <!--/Song playing-->
             <!--Player-->
-            <div class="player flexcol margin-top30">
-                <div class="player-buttons spacebetweencenter">
-                    <i class="fa-solid fa-shuffle"></i>
-                    <i class="fa-solid fa-backward-step"></i>
-                    <i class="fa-regular fa-circle-play"></i>
-                    <i class="fa-solid fa-forward-step"></i>
-                    <i class="fa-solid fa-arrow-rotate-right"></i>
+            <div class="player flexcolcenter">
+                <div class="player-buttons">
+                    <a href="">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-solid fa-backward-step"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-regular fa-circle-play margin-left-right10"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-solid fa-forward-step"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-solid fa-arrow-rotate-right"></i>
+                    </a>
+                </div>
+                <div class="timer flexcenter">
+                    <p class="margin-top10">2.00</p>
+                    <div class="volume-bar large margin-top10 margin-left-right10">
+                    <div class="volume-value">
+                        <i class="fa-solid fa-circle dot-large"></i>
+                    </div>
+                    </div>
+                    <p class="margin-top10">4:00</p>
                 </div>
             </div>
             <!--/Player-->
@@ -230,7 +250,8 @@
                     <div class="volume-value"></div>
                 </div>
             </div>
-        </div>
+    </div>
+    <!--/footer-->
     </div>
 </body>
 </html>
