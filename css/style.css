@@ -9,7 +9,7 @@ img{
     max-width: 100%;
 }
 body{
-    color: white;
+    color: orange;
     font-family: 'PT Sans', sans-serif;
 }
 a{
@@ -77,7 +77,8 @@ a{
 }
 /*LAYOUT*/
 /*IMG HOVER*/
-.col:hover img{
+.col
+:hover img{
     filter: brightness(20%);
 }
 .col:hover i{
