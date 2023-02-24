@@ -298,6 +298,13 @@ a{
         width: calc(100% / 4 - 20px);
         margin-bottom: 20px;
     }
+    .col i{
+        position: absolute;
+        top: 28%;
+        left: 29%;
+        font-size: 3em;
+        filter: opacity(0);
+    }
     /*MAIN CONTENT*/
     .discover-list li:last-child{
         justify-self: center;
@@ -318,6 +325,13 @@ a{
     }
     .song-section{
         height: calc(100% - 100px);
+    }
+    .col i{
+        position: absolute;
+        top: 36%;
+        left: 36%;
+        font-size: 4em;
+        filter: opacity(0);
     }
     /*PLAYER*/
     .player-buttons a{
@@ -363,7 +377,6 @@ a{
     .username img{
         width: 30px;
     }
-
     .main-content{
         width: calc(100% - 100px);
     }
