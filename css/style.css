@@ -187,6 +187,7 @@ a{
 }
 .discover-list a:hover{
     border-bottom: 2px solid lime;
+    font-weight: bold;
 }
 .row{
    width: 100%;
