@@ -115,14 +115,13 @@ a{
 .main{
     background-color: rgb(19, 18, 18);
     width: 100%;
-    height: calc(100% - 100px);
 }
 /*MAIN CHILDS*/
 /*COL LEFT*/
 .col-left{
     width: 200px;
     background-color: black;
-    font-size: 1em;
+    padding: 10px;
 }
 .col-left img{
     width: 150px;
@@ -146,6 +145,10 @@ a{
 }
 .col-left .line li a:hover{
     border-left: 3px solid green;
+}
+.playlist ul li a:hover{
+    font-size: 1.1em;
+    font-weight: bold;
 }
 /*PLAYLIST CARD*/
 .card{
