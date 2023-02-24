@@ -355,10 +355,15 @@ a{
     .col-left hr{
         display: none;
     }
-    .calltoaction,
-    .username{
+    .calltoaction a h4,
+    .username h4{
         display: none;
     }
+    .calltoaction a img,
+    .username img{
+        width: 30px;
+    }
+
     .main-content{
         width: calc(100% - 100px);
     }
