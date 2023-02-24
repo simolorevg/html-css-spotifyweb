@@ -120,7 +120,6 @@ a{
     width: 200px;
     background-color: black;
     font-size: 1em;
-    padding: 10px;
 }
 .col-left img{
     width: 150px;
@@ -141,6 +140,9 @@ a{
 }
 .username img{
     width: 20px;
+}
+.col-left .line li a:hover{
+    border-left: 3px solid green;
 }
 /*PLAYLIST CARD*/
 .card{
